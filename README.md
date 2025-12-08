@@ -28,7 +28,9 @@
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2512.05511"><img src="https://img.shields.io/static/v1?label=Arxiv&message=2512.05511&color=red&logo=arxiv"></a>
+  <a href="https://arxiv.org/abs/2512.05511"><img src="https://img.shields.io/static/v1?label=Arxiv&message=2512.05511&color=green&logo=arxiv"></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-red.svg"></a>
+  <a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python-3.8+-blue.svg"></a>
 </p>
 
 ## 💥 Abstract
