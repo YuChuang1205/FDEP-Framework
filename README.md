@@ -28,7 +28,7 @@
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/2512.05511"><img src="https://img.shields.io/static/v1?label=Arxiv&message=FDEP-Framework&color=green&logo=arxiv"></a>
+  <a href="https://arxiv.org/abs/2512.05511"><img src="https://img.shields.io/static/v1?label=Arxiv&message=2512.05511&color=red&logo=arxiv"></a>
 </p>
 
 ## 💥 Abstract
