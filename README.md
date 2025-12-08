@@ -43,7 +43,9 @@ We are finalizing the release of the paper, dataset and code and aim to complete
 - [ ] Release paper.
 - [ ] Release training and inference code.
 
-
+## Other link 
+1. My homepage: [[YuChuang](https://github.com/YuChuang1205)]
+2. My "PAL Framework" project code (ICCV2025)：[[Link](https://github.com/YuChuang1205/PAL)] 
 
 
 
