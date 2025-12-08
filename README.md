@@ -50,7 +50,7 @@ While large-scale visual foundation models (VFMs) exhibit strong generalization 
 
 ## ✅ TODO List
 We are finalizing the release of the paper, dataset and code and aim to complete it as soon as possible. Please stay tuned! ⚡⚡⚡
-- [ ] Release paper.
+- [x] Release paper. [[Paper/ArXiv](https://arxiv.org/abs/2512.05511)] 
 - [ ] Release training and inference code.
 
 ## Other link 
