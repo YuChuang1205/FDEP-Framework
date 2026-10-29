@@ -83,7 +83,53 @@ The first general framework to transfer visual foundation model (VFM) representa
 * [💎 Download the dataset required by our code!!!](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234)  
 
 
+## How to use our code
+1. Download the dataset
+   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click [download datasets](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) 
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unzip the downloaded compressed package to the root directory of the project.
+
+2. Clone the repository
+  ```bash
+  git clone https://github.com/YuChuang1205/FDEP-Framework.git
+  cd FDEP-Framework
+  ```
+3. Creat a Anaconda Virtual Environment
+
+    ```
+    conda create -n FDEP python=3.8 
+    conda activate FDEP 
+    ```
+4. Configure the running environment
+   
+   ```
+    pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+    pip install segmentation_models_pytorch -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install PyWavelets -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install scikit-image -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install albumentations==1.3.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs torchinfo
+    ```
+5. Training the model  
+   The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code.
+    ```
+    ##python train_001_original.py   ## Original detector
+    python train_002_with_FDEP_without_CO-ISD.py  ## Original detector + FDEP w/o CO-ISD
+    ## python train_003_with_FDEP.py   ## Original detector + FDEP
+    ```
+6. Testing the Model  
+  If you wish to save images or separate test, you can use the files provided in "tools_for_test." Simply copy them to the main directory and update the path to the directory containing the model weights to run the tests.  
+    ```
+    python test_004_only_dino_no_binary.py
+    ```
+7. Performance Evaluation
+    If you wish to separate evaluation, use "cal_mIoU_and_nIoU_for_no_binary.py", "cal_PD_and_Fa_for_no_binary.py" and "cal_total_metric_fast.py" for performance evaluation. Notably, the corresponding folder path should be replaced. default：SIRST3.
+    ```
+    python cal_mIoU_and_nIoU_for_no_binary.py
+    python cal_PD_and_Fa_for_no_binary.py
+    python cal_total_metric_fast.py
+    ```
 
 
 ## Other link 
