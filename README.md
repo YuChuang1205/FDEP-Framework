@@ -249,14 +249,21 @@ python cal_total_metric_fast.py
     
 <a id="foundation-model-index"></a>
 ## Foundation Model Index
-<details>
+<div align="center">
+<br>
+  <img width="80%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
+<br>
+</div>
+
+
+<!-- <details>
 <summary><b>Click to expand the Foundation Model Index</b></summary>
 <div align="center">
 <br>
   <img width="80%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
 <br>
 </div>
-</details>
+</details> -->
 
 ## Results
 <details>
