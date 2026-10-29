@@ -66,7 +66,18 @@ The first general framework to transfer visual foundation model (VFM) representa
 </div>
 
 ## Datasets
-<details>
+1. Original datasets (**You can also skip this step and use the complete dataset in step 2 directly.**)
+* **NUDT-SIRST** [[Original dataset](https://pan.baidu.com/s/1WdA_yOHDnIiyj4C9SbW_Kg?pwd=nudt)] [[paper](https://ieeexplore.ieee.org/document/9864119)]
+* **SIRST** [[Original dataset](https://github.com/YimianDai/sirst)] [[paper](https://ieeexplore.ieee.org/document/9423171)]
+* **IRSTD-1k** [[Original dataset](https://drive.google.com/file/d/1JoGDGF96v4CncKZprDnoIor0k1opaLZa/view)] [[paper](https://ieeexplore.ieee.org/document/9880295)]
+* **SIRST3** [[Original dataset](https://github.com/XinyiYing/LESPS)] [[paper](https://arxiv.org/pdf/2304.01484)]
+
+2. The datasets we created from original datasets (**can be used directly in our demo**)
+     
+* [💎 Download the dataset required by our code!!!](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234)
+
+
+<!-- <details>
 <summary><b>1. Original datasets (optional)</b></summary>
 
 **You can skip this step and directly use the prepared datasets in Step 2.**
@@ -85,7 +96,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 * [💎 Download the datasets required by our code](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) (access code: `1234`)
 
-</details>
+</details> -->
 
 
 
@@ -100,8 +111,53 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 ## How to use our code
+## How to use our code
+1. Download the dataset
+   
+        Click [download datasets](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) 
 
-<details>
+        Unzip the downloaded compressed package to the root directory of the project.
+
+2. Clone the repository
+    ```bash
+    git clone https://github.com/YuChuang1205/FDEP-Framework.git
+    cd FDEP-Framework
+    ```
+3. Creat a Anaconda Virtual Environment
+
+    ```
+    conda create -n FDEP python=3.8 
+    conda activate FDEP 
+    ```
+4. Configure the running environment
+   
+   ```
+    pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+    pip install segmentation_models_pytorch -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install PyWavelets -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install scikit-image -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install albumentations==1.3.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs torchinfo
+    ```
+5. Training the model
+   The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code. The value of `model_name_num` specifies the foundation model to use. See the [**Foundation Model Index**](#foundation-model-index) (below) for the mapping.
+    ```
+    ##python train_001_original.py   ## Original detector
+    python train_002_with_FDEP_without_CO-ISD.py  ## Original detector + FDEP w/o CO-ISD
+    ## python train_003_with_FDEP.py   ## Original detector + FDEP
+    ```
+6. Testing the Model  
+  If you wish to save images or separate test, you can use the files provided in "tools_for_test" folder. Simply copy them to the main directory and update the path to the directory containing the model weights to run the tests.  
+    ```
+    python test_004_only_dino_no_binary.py
+    ```
+7. Performance Evaluation (If you want to an additional evaluation.)  
+    ```
+    python cal_mIoU_and_nIoU_for_no_binary.py
+    python cal_PD_and_Fa_for_no_binary.py
+    python cal_total_metric_fast.py
+
+<!-- <details>
 <summary><b>1. Download the dataset</b></summary>
 
 Download the datasets from [Baidu Netdisk](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) (access code: `1234`).
@@ -186,7 +242,7 @@ python cal_PD_and_Fa_for_no_binary.py
 python cal_total_metric_fast.py
 ```
 
-</details>
+</details> -->
 
 
     
