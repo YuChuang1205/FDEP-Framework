@@ -132,11 +132,14 @@ The first general framework to transfer visual foundation model (VFM) representa
     python cal_total_metric_fast.py
     ```
 ## Foundation Model Index
+<details>
+<summary><b>Click to expand the Foundation Model Index</b></summary>
 <div align="center">
 <br>
   <img width="80%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
 <br>
 </div>
+</details>
 
 ## Results
 * **Quantative Results on the SIRST3 dataset:**
