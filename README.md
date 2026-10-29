@@ -40,7 +40,10 @@
 </p>
 
 <p align="center">
-  <a href="#"><strong>Learn from visual foundation models. Deploy with the original lightweight detector.</strong></a><br>
+  <a href="#"><strong>Learn from visual foundation models. Deploy with the original lightweight detector.</strong></a>
+</p>
+
+<p align="center">
   <a href="#"><strong>以视觉基础模型增强红外小目标检测，结合 CO-ISD 实现无额外基础模型推理开销的高效部署。</strong></a>
 </p>
 
