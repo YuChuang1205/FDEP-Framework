@@ -66,15 +66,28 @@ The first general framework to transfer visual foundation model (VFM) representa
 </div>
 
 ## Datasets
-1. Original datasets (**You can also skip this step and use the complete dataset in step 2 directly.**)
-* **NUDT-SIRST** [[Original dataset](https://pan.baidu.com/s/1WdA_yOHDnIiyj4C9SbW_Kg?pwd=nudt)] [[paper](https://ieeexplore.ieee.org/document/9864119)]
-* **SIRST** [[Original dataset](https://github.com/YimianDai/sirst)] [[paper](https://ieeexplore.ieee.org/document/9423171)]
-* **IRSTD-1k** [[Original dataset](https://drive.google.com/file/d/1JoGDGF96v4CncKZprDnoIor0k1opaLZa/view)] [[paper](https://ieeexplore.ieee.org/document/9880295)]
-* **SIRST3** [[Original dataset](https://github.com/XinyiYing/LESPS)] [[paper](https://arxiv.org/pdf/2304.01484)]
+<details>
+<summary><b>1. Original datasets (optional)</b></summary>
 
-2. The datasets we created from original datasets (**can be used directly in our demo**)
-     
-* [💎 Download the dataset required by our code!!!](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234)  
+**You can skip this step and directly use the prepared datasets in Step 2.**
+
+* **NUDT-SIRST** [[Original dataset](https://pan.baidu.com/s/1WdA_yOHDnIiyj4C9SbW_Kg?pwd=nudt)] [[Paper](https://ieeexplore.ieee.org/document/9864119)]
+* **SIRST** [[Original dataset](https://github.com/YimianDai/sirst)] [[Paper](https://ieeexplore.ieee.org/document/9423171)]
+* **IRSTD-1k** [[Original dataset](https://drive.google.com/file/d/1JoGDGF96v4CncKZprDnoIor0k1opaLZa/view)] [[Paper](https://ieeexplore.ieee.org/document/9880295)]
+* **SIRST3** [[Original dataset](https://github.com/XinyiYing/LESPS)] [[Paper](https://arxiv.org/pdf/2304.01484)]
+
+</details>
+
+<details>
+<summary><b>2. Prepared datasets (ready to use)</b></summary>
+
+**These datasets are prepared from the original datasets and can be used directly with our code.**
+
+* [💎 Download the datasets required by our code](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) (access code: `1234`)
+
+</details>
+
+
 
 
 ## Three configurations
