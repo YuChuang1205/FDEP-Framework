@@ -124,7 +124,7 @@ The first general framework to transfer visual foundation model (VFM) representa
     python test_004_only_dino_no_binary.py
     ```
 7. Performance Evaluation
-    If you wish to separate evaluation, use "cal_mIoU_and_nIoU_for_no_binary.py", "cal_PD_and_Fa_for_no_binary.py" and "cal_total_metric_fast.py" for performance evaluation. Notably, the corresponding folder path should be replaced. default：SIRST3.
+    If you wish to separate evaluation, use "cal_mIoU_and_nIoU_for_no_binary.py", "cal_PD_and_Fa_for_no_binary.py" and "cal_total_metric_fast.py" for performance evaluation. Notably, the corresponding folder path should be replaced.
     ```
     python cal_mIoU_and_nIoU_for_no_binary.py
     python cal_PD_and_Fa_for_no_binary.py
