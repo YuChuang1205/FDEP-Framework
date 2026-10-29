@@ -58,6 +58,14 @@ The first general framework to transfer visual foundation model (VFM) representa
 <br>
 </div>
 
+<p align="center">
+  <b>Comparison of different SIRST detection paradigms.</b>
+  <b>Top:</b> The traditional encoder-decoder architecture performs feature encoding and decoding sequentially.
+  <b>Bottom:</b> Our FDEP framework consists of a main branch (purple arrow) and a lightweight branch (green arrow).
+  The main branch integrates frozen semantic representations from VFMs, while the lightweight branch retains the original architecture.
+  During inference, only the lightweight branch is used for efficiency.
+</p>
+<br>
 
 ## 🔥 News 
 - 2026.10 🌟🌟 We set up a [**WeChat group**](#wechat-group) for discussion.
