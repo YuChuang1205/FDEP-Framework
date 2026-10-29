@@ -92,10 +92,10 @@ The first general framework to transfer visual foundation model (VFM) representa
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unzip the downloaded compressed package to the root directory of the project.
 
 2. Clone the repository
-  ```bash
-  git clone https://github.com/YuChuang1205/FDEP-Framework.git
-  cd FDEP-Framework
-  ```
+    ```bash
+    git clone https://github.com/YuChuang1205/FDEP-Framework.git
+    cd FDEP-Framework
+    ```
 3. Creat a Anaconda Virtual Environment
 
     ```
@@ -112,7 +112,7 @@ The first general framework to transfer visual foundation model (VFM) representa
     pip install albumentations==1.3.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
     pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs torchinfo
     ```
-5. Training the model  
+5. Training the model (The final result will be saved directly into a .txt file.)  
    The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code.
     ```
     ##python train_001_original.py   ## Original detector
@@ -124,7 +124,7 @@ The first general framework to transfer visual foundation model (VFM) representa
     ```
     python test_004_only_dino_no_binary.py
     ```
-7. Performance Evaluation
+7. Performance Evaluation  
     If you wish to separate evaluation, use "cal_mIoU_and_nIoU_for_no_binary.py", "cal_PD_and_Fa_for_no_binary.py" and "cal_total_metric_fast.py" for performance evaluation. Notably, the corresponding folder path should be replaced.
     ```
     python cal_mIoU_and_nIoU_for_no_binary.py
