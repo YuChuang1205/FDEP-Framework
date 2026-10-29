@@ -130,6 +130,40 @@ The first general framework to transfer visual foundation model (VFM) representa
     python cal_PD_and_Fa_for_no_binary.py
     python cal_total_metric_fast.py
     ```
+## Foundation Model Index
+<div align="center">
+<br>
+  <img width="100%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
+<br>
+</div>
+
+## Results
+* **Quantative Results on the SIRST3 dataset:**
+
+
+
+* **Quantative Results on the three individual datasets:**
+
+
+
+
+* **Quantative Results on different visual foundation models (VFMs):**
+
+
+## Citation
+
+If you find this repo helpful, please give us a 🤩**star**🤩. Please consider citing the **FDEP** if it benefits your project. <br>  
+
+BibTeX reference is as follows.
+```
+@article{yu2025rethinking,
+  title={Rethinking infrared small target detection: A foundation-driven efficient paradigm},
+  author={Yu, Chuang and Zhao, Jinmiao and Liu, Yunpeng and Li, Yaokun and Shu, Xiujun and Feng, Yuanhao and Wang, Bo and Dai, Yimian and Yue, Xiangyu},
+  journal={arXiv preprint arXiv:2512.05511},
+  year={2025}
+}
+```
+
 
 ## Other link 
 1. My homepage: [[YuChuang](https://github.com/YuChuang1205)]
