@@ -85,52 +85,98 @@ The first general framework to transfer visual foundation model (VFM) representa
 | + FDEP | Frozen VFM + SAMF + detector + CO-ISD | Original detector (Lightweight branch only) |
 
 
+
 ## How to use our code
-1. Download the dataset
-   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click [download datasets](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unzip the downloaded compressed package to the root directory of the project.
+<details>
+<summary><b>1. Download the dataset</b></summary>
 
-2. Clone the repository
-    ```bash
-    git clone https://github.com/YuChuang1205/FDEP-Framework.git
-    cd FDEP-Framework
-    ```
-3. Creat a Anaconda Virtual Environment
+Download the datasets from [Baidu Netdisk](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) (access code: `1234`).
 
-    ```
-    conda create -n FDEP python=3.8 
-    conda activate FDEP 
-    ```
-4. Configure the running environment
-   
-   ```
-    pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
-    pip install segmentation_models_pytorch -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip install PyWavelets -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip install scikit-image -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip install albumentations==1.3.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs torchinfo
-    ```
-5. Training the model
-   The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code. The value of `model_name_num` specifies the foundation model to use. See the [**Foundation Model Index**](#foundation-model-index) (below) for the mapping.
-    ```
-    ##python train_001_original.py   ## Original detector
-    python train_002_with_FDEP_without_CO-ISD.py  ## Original detector + FDEP w/o CO-ISD
-    ## python train_003_with_FDEP.py   ## Original detector + FDEP
-    ```
-6. Testing the Model  
-  If you wish to save images or separate test, you can use the files provided in "tools_for_test" folder. Simply copy them to the main directory and update the path to the directory containing the model weights to run the tests.  
-    ```
-    python test_004_only_dino_no_binary.py
-    ```
-7. Performance Evaluation (If you want to an additional evaluation.)  
-    ```
-    python cal_mIoU_and_nIoU_for_no_binary.py
-    python cal_PD_and_Fa_for_no_binary.py
-    python cal_total_metric_fast.py
-    ```
+After cloning the repository in Step 2, extract the downloaded archive into the project root directory.
+
+</details>
+
+<details>
+<summary><b>2. Clone the repository</b></summary>
+
+```bash
+git clone https://github.com/YuChuang1205/FDEP-Framework.git
+cd FDEP-Framework
+```
+
+</details>
+
+<details>
+<summary><b>3. Create a Conda environment</b></summary>
+
+```bash
+conda create -n FDEP python=3.8
+conda activate FDEP
+```
+
+</details>
+
+<details>
+<summary><b>4. Install dependencies</b></summary>
+
+```bash
+pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+pip install segmentation_models_pytorch -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install PyWavelets -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install scikit-image -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install albumentations==1.3.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install scikit-learn matplotlib thop h5py SimpleITK medpy yacs torchinfo
+```
+
+</details>
+
+<details>
+<summary><b>5. Train the model</b></summary>
+
+The default detector and dataset are **MSDA-Net** and **SIRST3**, respectively. To use other configurations, modify the settings at the beginning of the corresponding `train_*.py` script.
+
+The value of `model_name_num` specifies the foundation model to use. See the [**Foundation Model Index**](#foundation-model-index) below for the mapping.
+
+```bash
+# Original detector
+# python train_001_original.py
+
+# Original detector + FDEP w/o CO-ISD
+python train_002_with_FDEP_without_CO-ISD.py
+
+# Original detector + FDEP
+# python train_003_with_FDEP.py
+```
+
+</details>
+
+<details>
+<summary><b>6. Test the model</b></summary>
+
+To save prediction images or run standalone tests, use the scripts in the `tools_for_test` folder. Copy the required scripts to the project root directory and update the model checkpoint path before running:
+
+```bash
+python test_004_only_dino_no_binary.py
+```
+
+</details>
+
+<details>
+<summary><b>7. Evaluate performance (optional)</b></summary>
+
+For additional evaluation, run:
+
+```bash
+python cal_mIoU_and_nIoU_for_no_binary.py
+python cal_PD_and_Fa_for_no_binary.py
+python cal_total_metric_fast.py
+```
+
+</details>
+
+
+    
 <a id="foundation-model-index"></a>
 ## Foundation Model Index
 <details>
@@ -143,28 +189,40 @@ The first general framework to transfer visual foundation model (VFM) representa
 </details>
 
 ## Results
-* **Quantative Results on the SIRST3 dataset:**
+<details>
+<summary><b>Quantitative Results on the SIRST3 Dataset</b></summary>
+
 <div align="center">
-<br>
-  <img width="100%" src="imgs/Main_results_SIRST3.png" alt="Main_results_SIRST3">
-<br>
+  <br>
+  <img width="100%" src="imgs/Main_results_SIRST3.png" alt="Main results on SIRST3">
+  <br>
 </div>
 
+</details>
 
-* **Quantative Results on the three individual datasets:**
+<details>
+<summary><b>Quantitative Results on the Three Individual Datasets</b></summary>
+
 <div align="center">
-<br>
-  <img width="100%" src="imgs/Main_results_three_datasets.png" alt="Main_results_three_datasets">
-<br>
+  <br>
+  <img width="100%" src="imgs/Main_results_three_datasets.png" alt="Main results on three individual datasets">
+  <br>
 </div>
 
+</details>
 
-* **Quantative Results on different visual foundation models (VFMs):**
+<details>
+<summary><b>Quantitative Results on Different Visual Foundation Models (VFMs)</b></summary>
+
 <div align="center">
-<br>
-  <img width="100%" src="imgs/Main_results_VFMs.png" alt="Main_results_VFMs">
-<br>
+  <br>
+  <img width="100%" src="imgs/Main_results_VFMs.png" alt="Main results with different VFMs">
+  <br>
 </div>
+
+</details>
+
+
 
 <a id="wechat-group"></a>
 ## 微信交流群（2026-10-30）
