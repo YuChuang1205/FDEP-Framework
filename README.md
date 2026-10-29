@@ -250,7 +250,9 @@ python cal_total_metric_fast.py
 <a id="foundation-model-index"></a>
 ## visual Foundation Model Index
 <div align="center">
+<br>
   <img width="80%" src="imgs/Foundation_Model_Index_crop.png" alt="Foundation_Model_Index">
+<br>
 </div>
 
 
