@@ -112,7 +112,7 @@ The first general framework to transfer visual foundation model (VFM) representa
     pip install albumentations==1.3.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
     pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs torchinfo
     ```
-5. Training the model (The final result will be saved directly into a .txt file.)  
+5. Training the model
    The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code.
     ```
     ##python train_001_original.py   ## Original detector
@@ -125,7 +125,6 @@ The first general framework to transfer visual foundation model (VFM) representa
     python test_004_only_dino_no_binary.py
     ```
 7. Performance Evaluation  
-    If you wish to separate evaluation, use:
     ```
     python cal_mIoU_and_nIoU_for_no_binary.py
     python cal_PD_and_Fa_for_no_binary.py
