@@ -133,7 +133,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 ## Foundation Model Index
 <div align="center">
 <br>
-  <img width="100%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
+  <img width="80%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
 <br>
 </div>
 
