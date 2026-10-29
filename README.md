@@ -120,17 +120,16 @@ The first general framework to transfer visual foundation model (VFM) representa
     ## python train_003_with_FDEP.py   ## Original detector + FDEP
     ```
 6. Testing the Model  
-  If you wish to save images or separate test, you can use the files provided in "tools_for_test." Simply copy them to the main directory and update the path to the directory containing the model weights to run the tests.  
+  If you wish to save images or separate test, you can use the files provided in "tools_for_test" folder. Simply copy them to the main directory and update the path to the directory containing the model weights to run the tests.  
     ```
     python test_004_only_dino_no_binary.py
     ```
-7. Performance Evaluation  
+7. Performance Evaluation (If you want to an additional evaluation.)  
     ```
     python cal_mIoU_and_nIoU_for_no_binary.py
     python cal_PD_and_Fa_for_no_binary.py
     python cal_total_metric_fast.py
     ```
-
 
 ## Other link 
 1. My homepage: [[YuChuang](https://github.com/YuChuang1205)]
