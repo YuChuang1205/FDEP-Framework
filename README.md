@@ -68,7 +68,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 
-## Datasets
+## 📦 Datasets
 1. Original datasets (**You can also skip this step and use the complete dataset in step 2 directly.**)
 * **NUDT-SIRST** [[Original dataset](https://pan.baidu.com/s/1WdA_yOHDnIiyj4C9SbW_Kg?pwd=nudt)] [[paper](https://ieeexplore.ieee.org/document/9864119)]
 * **SIRST** [[Original dataset](https://github.com/YimianDai/sirst)] [[paper](https://ieeexplore.ieee.org/document/9423171)]
@@ -103,7 +103,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 
-## Three configurations
+## 🎯 Three configurations
 | Configuration | Training | Inference |
 | --- | --- | --- |
 | Original detector | Task-specific detector | Original detector |
@@ -113,7 +113,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 
-## How to use our code
+## 🚀 How to use our code
 1. Download the dataset
    
         Click [download datasets](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234) 
@@ -249,7 +249,7 @@ python cal_total_metric_fast.py
 
     
 <a id="foundation-model-index"></a>
-## visual Foundation Model Index
+## 📄 visual Foundation Model Index
 <div align="center">
 <br>
   <img width="80%" src="imgs/Foundation_Model_Index_crop.png" alt="Foundation_Model_Index">
@@ -266,7 +266,7 @@ python cal_total_metric_fast.py
 </div>
 </details> -->
 
-## Results
+## 📊 Results
 <details>
 <summary><b>Quantitative Results on the SIRST3 Dataset</b></summary>
 
@@ -303,7 +303,7 @@ python cal_total_metric_fast.py
 
 
 <a id="wechat-group"></a>
-## 微信交流群（2026-10-30）
+## 💬 微信交流群（2026-10-30）
 
 <details>
 <summary><b>点击展开微信群说明及二维码</b></summary>
@@ -320,7 +320,7 @@ python cal_total_metric_fast.py
 
 
 
-## Citation
+## 📈 Citation
 
 If you find this repo helpful, please give us a 🤩**star**🤩. Please consider citing the **FDEP** if it benefits your project. <br>  
 
