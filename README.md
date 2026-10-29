@@ -139,7 +139,11 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 ## Results
 * **Quantative Results on the SIRST3 dataset:**
-
+<div align="center">
+<br>
+  <img width="100%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
+<br>
+</div>
 
 
 * **Quantative Results on the three individual datasets:**
