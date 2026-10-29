@@ -53,6 +53,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 ## 🔥 News
+- 2026.10 🌟🌟 We set up a [**WeChat group**](https://github.com/YuChuang1205/PAL/blob/main/imgs/PAL_wechat.jpg) for discussion.
 - 2026.10 🌟🌟 We have released the **Complete Code**.
 - 2026.09 🎉🎉 Our paper has been accepted by **NeurIPS 2026**!
 - 2025.12 🌟🌟 We have released the [FDEP Manuscript](https://arxiv.org/abs/2512.05511).
