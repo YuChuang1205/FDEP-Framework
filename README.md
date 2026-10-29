@@ -100,7 +100,6 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 
-
 ## Three configurations
 | Configuration | Training | Inference |
 | --- | --- | --- |
@@ -110,7 +109,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 
 
 
-## How to use our code
+
 ## How to use our code
 1. Download the dataset
    
