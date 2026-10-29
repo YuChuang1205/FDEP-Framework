@@ -141,7 +141,7 @@ The first general framework to transfer visual foundation model (VFM) representa
     pip install scikit-learn matplotlib thop h5py SimpleITK scikit-image medpy yacs torchinfo
     ```
 5. Training the model
-   The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code. The value of `model_name_num` specifies the foundation model to use. See the [**Foundation Model Index**](#foundation-model-index) (below) for the mapping.
+   The default model and dataset are MSDA-Net, SIRST3. If you need to train others, please modify the corresponding setting in "train_***.py". Just change the settings to your choice. It's very simple. For details, please see the beginning of the code. Notably, the value (334,337,600....) of `model_name_num` specifies the foundation model to use. See the [**Foundation Model Index**](#foundation-model-index) (below) for the mapping.
     ```
     ##python train_001_original.py   ## Original detector
     python train_002_with_FDEP_without_CO-ISD.py  ## Original detector + FDEP w/o CO-ISD
