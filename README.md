@@ -206,7 +206,7 @@ pip install scikit-learn matplotlib thop h5py SimpleITK medpy yacs torchinfo
 
 The default detector and dataset are **MSDA-Net** and **SIRST3**, respectively. To use other configurations, modify the settings at the beginning of the corresponding `train_*.py` script.
 
-The value of `model_name_num` specifies the foundation model to use. See the [**Foundation Model Index**](#foundation-model-index) below for the mapping.
+The value of `model_name_num` specifies the foundation model to use. See the [**Visual  Foundation Model Index**](#foundation-model-index) below for the mapping.
 
 ```bash
 # Original detector
@@ -248,7 +248,7 @@ python cal_total_metric_fast.py
 
     
 <a id="foundation-model-index"></a>
-## Foundation Model Index
+## visual Foundation Model Index
 <div align="center">
 <br>
   <img width="80%" src="imgs/Foundation_Model_Index.png" alt="Foundation_Model_Index">
