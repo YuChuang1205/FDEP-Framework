@@ -65,6 +65,7 @@ The first general framework to transfer visual foundation model (VFM) representa
   The main branch integrates frozen semantic representations from VFMs, while the lightweight branch retains the original architecture.
   During inference, only the lightweight branch is used for efficiency.
 </p>
+<br>
 
 ## 🔥 News 
 - 2026.10 🌟🌟 We set up a [**WeChat group**](#wechat-group) for discussion.
