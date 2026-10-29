@@ -266,7 +266,7 @@ python cal_total_metric_fast.py
 </div>
 </details> -->
 
-## 📊 Results
+## 📈 Results
 <details>
 <summary><b>Quantitative Results on the SIRST3 Dataset</b></summary>
 
@@ -320,7 +320,7 @@ python cal_total_metric_fast.py
 
 
 
-## 📈 Citation
+## Citation
 
 If you find this repo helpful, please give us a 🤩**star**🤩. Please consider citing the **FDEP** if it benefits your project. <br>  
 
