@@ -1,0 +1,60 @@
+MSDA-Net 集成视觉基础模型：版本编号对应表
+========================================
+
+文件名格式：MSDA_dino_no_sigmoid_<编号>.py
+本表依据当前源码实际加载的模型及 forward 分支整理。
+“+蒸馏”表示增加学生分支，并返回学生输出、教师输出和蒸馏损失。
+本表为源码配置说明，未验证所有版本的权重下载和实际运行。
+
+基础模型                             普通版本    +蒸馏版本
+-------------------------------------------------------
+DINOv2 ViT-L/14                       334         337
+DINO ViT-B/16                         601         602
+DINO ViT-S/16                         603         604
+DINOv3 ViT-L/16                       605         606
+DINOv3 ViT-B/16                       607         608
+DINOv3 ViT-S+/16                      609         610
+DINOv3 ViT-S/16                       611         612
+DINOv3 ViT-H+/16                      613         614
+DINOv3 ViT-7B/16                      615         616
+SAM ViT-B                            617         618
+SAM ViT-L                            619         620
+SAM ViT-H                            621         622
+SAM 2.1 Hiera-Tiny                    623         624
+SAM 2.1 Hiera-Small                   625         626
+SAM 2.1 Hiera-Base+                   627         628
+SAM 2.1 Hiera-Large                   629         630
+CLIP ViT-B/16 (OpenAI)                631         632
+CLIP ViT-L/14 (OpenAI)                633         634
+OpenCLIP ViT-H/14 (LAION)             635         636
+OpenCLIP ViT-bigG/14 (LAION)          637         638
+MAE ViT-L/16                         639         640
+MAE ViT-B/16                         641         642
+MAE ViT-H/14                         643         644
+DINOv2 ViT-S/14                      645         646
+DINOv2 ViT-B/14                      647         648
+DINOv2 ViT-g/14                      649         650
+
+权重及模型标识补充
+------------------
+631/632：ViT-B-16，pretrained='openai'
+633/634：ViT-L-14，pretrained='openai'
+635/636：ViT-H-14，pretrained='laion2b_s32b_b79k'
+637/638：ViT-bigG-14，pretrained='laion2b_s39b_b160k'
+639/640：vit_large_patch16_224.mae
+641/642：vit_base_patch16_224.mae
+643/644：vit_huge_patch14_224.mae
+
+源码核对说明
+------------
+1. 601～650 中，每个奇数编号及其后一个偶数编号使用相同的基础模型
+   特征提取器；偶数版本增加蒸馏分支。
+2. DINOv3 特征提取器类名中的 Distilled 不能作为是否增加上述蒸馏
+   分支的判断依据；以模型 forward 的实际分支和返回值为准。
+3. 603/604 的特征提取器说明文字写着 ViT-B/16，但实际加载
+   dino_vits16，因此对应 DINO ViT-S/16。
+4. 623～630 使用 SAM 2.1 的配置和权重。
+5. 645～650 的默认权重 URL 沿用了 dinov2_vitl14/ 目录，但文件名
+   分别为 S、B、g 版本，下载路径需要进一步核对。
+6. dinov2.py、dinov2_original.py、dinov2_2.py 是辅助实现文件，
+   不单独对应上表中的集成模型编号。
