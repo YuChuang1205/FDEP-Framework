@@ -157,7 +157,7 @@ The first general framework to transfer visual foundation model (VFM) representa
     python cal_mIoU_and_nIoU_for_no_binary.py
     python cal_PD_and_Fa_for_no_binary.py
     python cal_total_metric_fast.py
-
+    ```
 <!-- <details>
 <summary><b>1. Download the dataset</b></summary>
 
