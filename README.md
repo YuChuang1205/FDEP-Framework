@@ -239,11 +239,19 @@ python cal_total_metric_fast.py
 
 <a id="wechat-group"></a>
 ## 微信交流群（2026-10-30）
-🚑🚑 为了方便解决大家在使用以及扩展本开源框架中存在的问题，我建立了一个微信群聊（和PAL框架交流一个群），如下：(**若二维码过期，可以在github的问题区留言，我将及时更新~~~**)
+
+<details>
+<summary><b>点击展开微信群说明及二维码</b></summary>
+
+🚑🚑 为方便交流本开源框架的使用与扩展问题，我们建立了微信群（与 PAL 框架共用同一个交流群）。
+
+**若二维码过期，请在 GitHub Issues 中留言，我将及时更新。**
 
 <p align="center">
-  <img src="https://github.com/YuChuang1205/PAL/blob/main/imgs/PAL_wechat.jpg" alt="wechat" width="400"/></br>
-</p> 
+  <img src="https://raw.githubusercontent.com/YuChuang1205/PAL/main/imgs/PAL_wechat.jpg" alt="WeChat QR Code" width="400"/>
+</p>
+
+</details>
 
 
 
