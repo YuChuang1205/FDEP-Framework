@@ -64,13 +64,6 @@ The first general framework to transfer visual foundation model (VFM) representa
 <br>
 </div>
 
-## Three configurations
-| Configuration | Training | Inference |
-| --- | --- | --- |
-| Original detector | Task-specific detector | Original detector |
-| + FDEP w/o CO-ISD | Frozen VFM + SAMF + detector | VFM-enhanced main branch |
-| + FDEP | Frozen VFM + SAMF + detector + CO-ISD | Original detector (Lightweight branch only) |
-
 ## Datasets
 1. Original datasets (**You can also skip this step and use the complete dataset in step 2 directly.**)
 * **NUDT-SIRST** [[Original dataset](https://pan.baidu.com/s/1WdA_yOHDnIiyj4C9SbW_Kg?pwd=nudt)] [[paper](https://ieeexplore.ieee.org/document/9864119)]
@@ -81,6 +74,14 @@ The first general framework to transfer visual foundation model (VFM) representa
 2. The datasets we created from original datasets (**can be used directly in our demo**)
      
 * [💎 Download the dataset required by our code!!!](https://pan.baidu.com/s/1_QIs9zUM_7MqJgwzO2aC0Q?pwd=1234)  
+
+
+## Three configurations
+| Configuration | Training | Inference |
+| --- | --- | --- |
+| Original detector | Task-specific detector | Original detector |
+| + FDEP w/o CO-ISD | Frozen VFM + SAMF + detector | VFM-enhanced main branch |
+| + FDEP | Frozen VFM + SAMF + detector + CO-ISD | Original detector (Lightweight branch only) |
 
 
 ## How to use our code
