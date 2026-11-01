@@ -68,6 +68,7 @@ The first general framework to transfer visual foundation model (VFM) representa
 <br>
 
 ## 🔥 News 
+- 2026.11 🌟🌟 We have released the **FDEP Poster**.
 - 2026.10 🌟🌟 We set up a [**WeChat group**](#wechat-group) for discussion.
 - 2026.10 🌟🌟 We have released the **Complete Code**.
 - 2026.09 🎉🎉 Our paper has been accepted by **NeurIPS 2026**!
