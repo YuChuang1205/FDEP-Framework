@@ -315,6 +315,15 @@ python cal_total_metric_fast.py
 
 
 
+## 💥 Poster
+<div align="center">
+<br>
+  <img width="100%" src="imgs/FDEP-poster.png" alt="FDEP-poster">
+<br>
+</div>
+
+
+
 <a id="wechat-group"></a>
 ## 💬 微信交流群（2026-10-30）
 
