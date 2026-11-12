@@ -326,7 +326,7 @@ python cal_total_metric_fast.py
 
 
 <a id="wechat-group"></a>
-## 💬 微信交流群（2026-10-30）
+## 💬 微信交流群
 
 <details>
 <summary><b>点击展开微信群说明及二维码</b></summary>
