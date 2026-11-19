@@ -40,6 +40,16 @@
 </p>
 
 <p align="center">
+  <a href="https://zhuanlan.zhihu.com/p/2105990480441897812"><strong>知乎</strong></a>
+  &nbsp;&nbsp;
+  <!-- <a href="https://youtu.be/C7FUAGd0c6Q"><strong>YouTube</strong></a>
+  &nbsp;&nbsp; -->
+  <a href="#wechat-group"><strong>微信交流群</strong></a>
+  &nbsp;&nbsp;
+  <a href="#poster"><strong>Poster</strong></a>
+</p>
+
+<p align="center">
   <a href="#"><strong>Learn from visual foundation models. Deploy with the original lightweight detector.</strong></a>
 </p>
 
@@ -315,7 +325,7 @@ python cal_total_metric_fast.py
 </details>
 
 
-
+<a id="poster"></a>
 ## 💥 Poster
 <div align="center">
 <br>
